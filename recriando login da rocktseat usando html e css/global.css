@@ -1,0 +1,202 @@
+:root {
+    --purple: rgb(130, 52, 233);
+    --gray: rgb(196, 196, 204);
+    --black: rgb(26, 26, 30);
+    --white: rgb(255, 255, 230);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.container-left {
+    flex: 1;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.container-right {
+    max-width: 560px;
+    flex: 1 1 0%;
+}
+
+.container-right .grid {
+    background-color: var(--black);
+    padding: 5rem;
+    height: 100dvh;
+    overflow: auto;
+}
+
+.container-right .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-right h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--gray);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.grid form::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(41,41,46);
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    color: var(--gray);
+    font-size: .85rem;
+    line-height: 160%;
+}
+
+.input-field .input-square {
+    padding: .75rem 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(41,41,46);
+    border-radius: .30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+}
+
+.input-square input {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    background-color: transparent;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.forgot-link {
+    color: rgb(181, 133, 251);
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: .9rem;
+}
+
+.btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: .75rem 2rem;
+    background-color: var(--purple);
+    border-style: none;
+    border-radius: .31rem;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.btn-login:hover {
+    background-color: rgb(142, 77, 227);
+}
+
+.btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.btn-github span {
+    color: var(--gray);
+    font-weight: 400;
+    flex: 1;
+}
+
+.btn-github button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    font-weight: 400;
+    padding: .75rem 1.8rem;
+    background-color: rgb(41,41,46);
+    border-style: none;
+    border-radius: .31rem;
+    color: var(--white);
+    cursor: pointer;
+    margin: 30px 0;
+    font-size: 1rem;
+    transition: all .2s;
+}
+
+.btn-github button:hover {
+    background-color: rgb(59, 59, 66);
+}
+
+.btn-register {
+    background-color: rgb(41, 41, 46);
+    border-style: none;
+    color: var(--white);
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: rgb(59, 59, 66);
+}
+
+.btn-register div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.btn-register div span:first-child {
+    margin-bottom: 5px;
+}
+
+.btn-register .white {
+    color: var(--gray);
+}
+
+.btn-register .purple {
+    color: rgb(181, 133, 251);
+}
+
+.btn-register div img {
+    width: 30px;
+    margin-right: 20px;
+}
