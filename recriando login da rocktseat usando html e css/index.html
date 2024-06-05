@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Rocketseat</title>
+    <link rel="stylesheet" href="./global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="container-left" style="background-image: url('./images/auth.webp');"></div>
+        <div class="container-left" style="background-image: url('./images/auth.webp');">
+        </div>
         <div class="container-right">
             <div class="grid">
                 <div class="logo">
-                    <img src="./images/rocketseat-logo.svg" alt="">
+                    <img src="./images/rocketseat-logo.svg" alt="Rocketseat logo">
                 </div>
                 <h1>Acesse sua conta</h1>
                 <form action="#">
                     <div class="input-field">
-                        <label for="email">E-mail</label>
+                        <label for="email" class="mb-3">E-mail</label>
                         <div class="input-square">
-                            <input type="email" id="email" placeholder="Seu e-mail">
+                            <input type="email" placeholder="Seu e-mail">
                         </div>
                     </div>
-                    <div class="input-field">
+                    <div class="input-field mt-7">
                         <label for="password">Senha</label>
                         <div class="input-square">
-                            <input type="password" id="password" placeholder="Sua senha">
+                            <input type="password" placeholder="Sua senha">
                         </div>
                     </div>
                     <a href="#" class="forgot-link">Esqueci minha senha</a>
@@ -36,7 +37,7 @@
                     <div class="btn-github">
                         <span>Ou se preferir</span>
                         <button>
-                            <img src="./images/github.svg" alt="">
+                            <img src="./images/github.svg" alt="github logo">
                             Entre com github
                         </button>
                     </div>

@@ -1,18 +1,27 @@
 :root {
     --purple: rgb(130, 52, 233);
-    --gray: rgb(196, 196, 204);
-    --black: rgb(26, 26, 30);
-    --white: rgb(255, 255, 230);
+    --gray: rgb(196,196,204);
+    --black: rgba(26,26,30);
+    --white: rgba(225, 225, 230);
 }
 
 * {
-    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
+    line-height: inherit;
     overflow: hidden;
+}
+
+.mt-7 {
+    margin-top: 1.75rem;
+}
+
+.mb-3 {
+    margin-bottom: .75rem;
 }
 
 .container {
@@ -63,19 +72,18 @@ body {
 .input-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .input-field label {
     color: var(--gray);
-    font-size: .85rem;
+    font-size: .87rem;
     line-height: 160%;
 }
 
 .input-field .input-square {
     padding: .75rem 1rem;
     background-color: transparent;
-    border: 1px solid rgb(41,41,46);
+    border: solid 1px rgb(41,41,46);
     border-radius: .30rem;
     display: flex;
     justify-content: center;
@@ -85,7 +93,11 @@ body {
     box-sizing: border-box;
 }
 
-.input-square input {
+.input-field .input-square:focus-within {
+    border-color: var(--purple); 
+}
+
+.input-field .input-square input {
     color: var(--white);
     font-weight: 400;
     font-size: 1rem;
@@ -97,7 +109,7 @@ body {
     outline: none;
 }
 
-.forgot-link {
+.grid .forgot-link {
     color: rgb(181, 133, 251);
     text-decoration: none;
     display: block;
@@ -105,7 +117,7 @@ body {
     font-size: .9rem;
 }
 
-.btn-login {
+.grid .btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +133,7 @@ body {
     margin: 30px 0;
 }
 
-.btn-login:hover {
+.grid .btn-login:hover {
     background-color: rgb(142, 77, 227);
 }
 
@@ -146,7 +158,7 @@ body {
     flex: 2;
     font-weight: 400;
     padding: .75rem 1.8rem;
-    background-color: rgb(41,41,46);
+    background-color: rgb(41 41 46);
     border-style: none;
     border-radius: .31rem;
     color: var(--white);
@@ -160,8 +172,13 @@ body {
     background-color: rgb(59, 59, 66);
 }
 
+.btn-github button img {
+    width: 20px;
+    margin-right: 5px;
+}
+
 .btn-register {
-    background-color: rgb(41, 41, 46);
+    background-color: rgb(41 41 46);
     border-style: none;
     color: var(--white);
     display: flex;
@@ -197,6 +214,6 @@ body {
 }
 
 .btn-register div img {
-    width: 30px;
+    width: 20px;
     margin-right: 20px;
 }
